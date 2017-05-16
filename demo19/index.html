@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>过渡效果</title>
+    <style>
+        .ceng {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            cursor: pointer;
+            /* 过渡时间 */
+            transition-duration: 2s;
+            /* 过渡属性 */
+            /*transition-property: width; */
+            transition-property: all;
+            /* 延迟0.2s后才开始变化 */
+            transition-delay: .2s;
+            /* 慢-快-慢 默认 */
+           /*transition-timing-function: ease;*/
+           /* 匀速 */
+           /*transition-timing-function: linear;*/
+           /* 慢-快 */
+           /*transition-timing-function: ease-in;*/
+           /* 快-慢 */
+           /*transition-timing-function: ease-out;*/
+           /* ease一样 */
+           /*transition-timing-function: ease-in-out;*/
+           /* 无变化 */
+           /*transition-timing-function: step-start;*/
+           /* 等duration时间到了后立即变化 */
+           /*transition-timing-function: step-end;*/
+           /*组合*/
+           transition: all .5s;
+        }
+        .ceng:hover {
+            width: 300px;
+            height: 150px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Transition 复合属性，由多个属性组成
+        transition-property; 过渡属性 默认all
+        transition-duration: 过渡持续时间 默认0s
+        transition-timing-function: 过渡函数 默认ease
+        transition-delay: 过渡延迟时间 默认0s
+    -->
+
+    <div class="ceng"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text-overflow解决文字排版问题</title>
+    <style>
+        .demo {
+            margin: 30px auto;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            height: 50px;
+            /* 配合 hidden */
+            text-overflow: clip;
+            overflow: hidden;
+        }
+        .demo1 {
+            margin: 0px auto;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            height: 50px;
+            /* 配合 hidden white-space 不能单独使用*/
+            text-overflow: ellipsis;
+            overflow: hidden;
+            /* 不换行 */
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        text-overflow: clip | ellipsis | string
+     -->
+
+     <div class="demo">
+         天猫 -中国地标性的线上综合购物平台，拥有超1.2万国际品牌，18万知名大牌，8.9万品牌旗舰店。
+     </div>
+     <div class="demo1">
+         天猫 -中国地标性的线上综合购物平台，拥有超1.2万国际品牌，18万知名大牌，8.9万品牌旗舰店。
+     </div>
+</body>
+</html>

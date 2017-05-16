@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rem 字体方案</title>
+    <style>
+        /*根大小*/
+        html {
+            /* 网页默认的值是16px，期望是10px，则 10 / 16 * 100% = 62.5%  */
+            font-size: 62.5%; 
+        }
+        body {
+            font-size: 1.4rem; /* 14px */
+        }
+        h1 {
+            font-size: 2.4rem; /* 24px  */
+        }
+    </style>
+</head>
+<body>
+    <!--
+        12px 1.4em 1.4rem
+        px: 像素单位
+        1.4em: 相对于父层缩放 例如父层10px 子层就为14px
+        rem: 相对于整个网页的根字体来缩放
+    -->
+
+    <div>Hello Panda</div>
+    <h1>Hello Panda</h1>
+</body>
+</html>

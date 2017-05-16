@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>线性渐变</title>
+    <style>
+        .ceng {
+            width: 260px;
+            height: 200px;
+            border: 1px solid #000;
+            /* 尽量用到 bacbackground-image下面 */
+            /* 默认是从上到下渐变，各占50% */
+            /*background-image: linear-gradient(orange, green);*/
+            /* 从右到左 */
+            /*background-image: linear-gradient(to left, orange, green);*/
+            /* 从50%开始执行渐变 */
+            /*background-image: linear-gradient(to left, orange 50%, green 100%);*/
+            /*background-image: linear-gradient(to left, orange 30%, green 60%, red 100%);*/
+            /*background-image: linear-gradient(to left, orange 100px, green 160px, red 260px);*/
+            /*background-image: linear-gradient(180deg, orange 100px, green 160px, red 260px);*/
+            background-image: -webkit-linear-gradient(180deg, orange 100px, green 160px, red 260px);
+            background-image: -moz-linear-gradient(180deg, orange 100px, green 160px, red 260px);
+            background-image: -ms-linear-gradient(180deg, orange 100px, green 160px, red 260px);
+            background-image: -o-linear-gradient(180deg, orange 100px, green 160px, red 260px);
+            background-image: linear-gradient(180deg, orange 100px, green 160px, red 260px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        linear-gradient([<point> || <angle>,] ? <stop>, <stop>[,<stop>]*)
+        
+        <angle>: 用角度值指向渐变方向（或角度）
+        to left: 设置渐变为从右到左。相当于：270deg
+        to right: 设置渐变从左到右。相当于：90deg
+        to top：设置渐变从下到上。相当于：0deg
+        to bottom； 设置渐变从上到下。相当于：180deg
+
+        <color-stop>用于指定渐变的起止颜色
+        <color>: 指定颜色
+        <length>: 用长度值指定起止色位置。不允许负值
+        <percentage>: 用百分比指定起止色位置
+        
+     -->
+
+     <div class="ceng"></div>
+</body>
+</html>

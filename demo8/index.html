@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star</title>
+    <style>
+        #star {
+            width: 0px;
+            height: 0px;
+            border-bottom: 70px solid #f00;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 0 solid #f00;
+            margin: 150px auto;
+            -webkit-transform: rotate(35deg);
+            -ms-transform: rotate(35deg);
+            -o-transform: rotate(35deg);
+            transform: rotate(35deg);
+            position: relative;
+        }
+        #star::before {
+            position: absolute;
+            top: -45px;
+            left: -65px;
+            content: '';
+            width: 0px;
+            height: 0px;
+            border-bottom: 80px solid #f00;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            -webkit-transform: rotate(-35deg);
+            -ms-transform: rotate(-35deg);
+            -o-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+        }
+        #star::after {
+            position: absolute;
+            content: '';
+            border-bottom: 70px solid #f00;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            -webkit-transform: rotate(-70deg);
+            -ms-transform: rotate(-70deg);
+            -o-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+            top: 3px;
+            left: -105px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 画五角星 -->
+    <div id="star"></div>
+</body>
+</html>

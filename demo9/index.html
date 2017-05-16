@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五边形</title>
+    <style>
+        /* 梯形 */
+        #zheng {
+            margin: 50px auto;
+            width: 50px;
+            height: 0px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 50px solid #ff0;
+        }
+
+        /* 五边形 */
+        #wubian {
+            margin: 100px auto;
+            width: 54px;
+            height: 0px;
+            border-top: 50px solid red;
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            position: relative;
+        }
+        #wubian::after {
+            content: '';
+            position: absolute;
+            top: -95px;
+            left: -17px;
+            width: 0;
+            height: 0;
+            border-left: 41px solid transparent;
+            border-right: 47px solid transparent;
+            border-bottom: 45px solid red;
+        }
+
+        /* 六边形 */
+        #liubian {
+            margin: 150px auto;
+            width: 50px;
+            height: 55px;
+            background-color: red;
+            position: relative;
+        }
+        #liubian::before {
+            content: '';
+            position: absolute;
+            top: -25px;
+            width: 0px;
+            height: 0px;
+            border-bottom: 25px solid red;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+        }
+        #liubian::after {
+            content: '';
+            position: absolute;
+            top: 55px;
+            width: 0px;
+            height: 0px;
+            border-top: 25px solid red;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- 梯形 -->
+    <div id="zheng"></div>
+
+    <!-- 五边形 -->
+    <div id="wubian"></div>
+
+    <!-- 六边形 -->
+    <div id="liubian"></div>
+</body>
+</html>

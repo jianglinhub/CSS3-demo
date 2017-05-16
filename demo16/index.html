@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>径向渐变</title>
+    <style>
+        .ceng {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin: 10px;
+            float: left;
+        }
+        /* 圆形渐变 */        
+        .circle-center {
+            background-image: radial-gradient(circle at center, orange, green);
+        }
+        /* 椭圆渐变 */        
+        .ellipse-center {
+            background-image: radial-gradient(ellipse at center, orange, green);
+        }
+        .circle-right {
+            background-image: radial-gradient(circle at right, orange, green);
+        }
+        .ellipse-right {
+            background-image: radial-gradient(ellipse at right, orange, green);
+            clear: right;
+        }
+        .circle-left {
+            background-image: radial-gradient(circle at left, orange, green);
+        }
+        .ellipse-left {
+            background-image: radial-gradient(ellipse at left, orange, green);
+            clear: right;
+        }
+        .circle-top {
+            background-image: radial-gradient(circle at top, orange, green);
+        }
+        .ellipse-top {
+            background-image: radial-gradient(ellipse at top, orange, green);
+            clear: right;
+        }
+        .circle-top-left {
+            background-image: radial-gradient(circle at top left, orange, green);
+        }
+        .ellipse-top-left {
+            background-image: radial-gradient(ellipse at top left, orange, green);
+            clear: right;
+        }
+        .circle-in-out {
+            background-image: radial-gradient(40px circle at center, orange, green);
+        }
+        .ellipse-in-out {
+            /* 椭圆有x轴和y轴 */
+            background-image: radial-gradient(30px 40px ellipse at center, orange, green);
+            clear: right;
+        }
+        .circle-in-center-out {
+            background-image: radial-gradient(40px circle at center, orange, green, red);
+        }
+        .ellipse-in-center-out {
+            /* 椭圆有x轴和y轴 */
+            background-image: radial-gradient(30px 40px ellipse at center, orange, green, red);
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 径向渐变 -->
+    <div class="ceng circle-center"></div>
+    <div class="ceng ellipse-center"></div>
+
+    <div class="ceng circle-right"></div>
+    <div class="ceng ellipse-right"></div>
+    
+    <div class="ceng circle-left"></div>
+    <div class="ceng ellipse-left"></div>
+
+    <div class="ceng circle-top"></div>
+    <div class="ceng ellipse-top"></div>
+
+    <div class="ceng circle-top-left"></div>
+    <div class="ceng ellipse-top-left"></div>
+
+    <div class="ceng circle-in-out"></div>
+    <div class="ceng ellipse-in-out"></div>
+
+    <div class="ceng circle-in-center-out"></div>
+    <div class="ceng ellipse-in-center-out"></div>
+</body>
+</html>

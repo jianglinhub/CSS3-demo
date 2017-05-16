@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类选择器</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .clearfix {
+            clear: both;
+            overflow: auto;
+        }
+        .demo {
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 50px auto;
+            padding: 10px;
+        }
+        .demo li {
+            float: left;
+            list-style: none;
+            padding: 2px;
+            border: 1px solid #ccc;
+            margin-right: 4px;
+            width: 20px;
+        }
+        .demo a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #f36;
+            text-decoration: none;
+        }
+        /*.demo li:first-child {
+            background-color: #0f0; 
+        }
+        .demo li:nth-child(3) {
+            background-color: #a02; 
+        }*/
+        /*奇数*/
+        /*.demo li:nth-child(odd) {
+            background-color: #a02; 
+        }*/
+        /*偶数*/
+        /*.demo li:nth-child(even) {
+            background-color: #a02; 
+        }*/
+        /*  1 4 7 */
+        /*.demo li:nth-child(3n+1) {
+            background-color: #a02; 
+        }*/
+        /* 倒数 */
+        /*.demo li:nth-last-child(3) {
+            background-color: #a02; 
+        }*/
+        /* 限制为第三个li，中间有其他元素不管 */
+        /*.demo li:nth-of-type(3) {
+            background-color: #a02; 
+        }*/
+        /* 倒数限制为第三个li，中间有其他元素不管 */
+        /*.demo li:nth-last-of-type(3) {
+            background-color: #a02; 
+        }*/
+        /* 选择其上级父元素最后的一个li元素 */
+        /*.demo li:last-of-type {
+            background-color: #a02; 
+        }*/
+        /* 当前元素是其父元素唯一一个同类元素的时候 */
+        /*.demo li:only-child {
+            background-color: #a02; 
+        }*/
+        /* 选择当前元素内部是空的元素 */
+        .demo li:empty {
+            background-color: #a02;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo clearfix">
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+            <li><a href="">8</a></li>
+            <li><a href="">9</a></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="demo clearfix">
+        <ul class="clearfix">
+            <li><a href="">1</a></li>
+        </ul>
+    </div>
+</body>
+</html>

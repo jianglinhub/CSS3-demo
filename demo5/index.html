@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #ccc;
+            background-color: #f66;
+            margin: 50px auto;
+            
+            /* 圆角几种种写法*/
+            /*border-radius: 50%;*/
+
+            /*border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;*/
+
+            /*border-radius: 100px 100px 50px 50px;*/
+
+            /*border-top-left-radius: 50px 100px;*/
+
+            /* 画个半圆，需要一个长方形，w 200px h 100px */
+            border-radius: 100px 100px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        border-radius
+        1、减少网站的维护工作量
+        2、提高网站性能
+        3、增加了视觉美观性
+    -->
+
+    <div class="demo"></div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心形和蛋形</title>
+    <style>
+        /* 心形 */
+        #heart {
+            width: 100px;
+            height: 90px;
+            position: relative;
+            margin: 100px auto;
+        }
+        #heart::before {
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 80px;
+            background-color: red;
+            -webkit-border-radius: 50px 50px 0 0;
+            -moz-border-radius: 50px 50px 0 0;
+            -ms-border-radius: 50px 50px 0 0;
+            -o-border-radius: 50px 50px 0 0;
+            border-radius: 50px 50px 0 0;
+            /* 定义旋转坐标点 */
+            -webkit-transform-origin: 0 100%;
+            -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+            -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+            /* 开始旋转 */
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            left: 50px;
+        }
+        #heart::after {
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 80px;
+            background-color: red;
+            -webkit-border-radius: 50px 50px 0 0;
+            -moz-border-radius: 50px 50px 0 0;
+            -ms-border-radius: 50px 50px 0 0;
+            -o-border-radius: 50px 50px 0 0;
+            border-radius: 50px 50px 0 0;
+            /* 定义旋转坐标点 */
+            -webkit-transform-origin: 100% 100%;
+            -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+            /* 开始旋转 */
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        /* 蛋形 */
+        #egg {
+            width: 126px;
+            height: 180px;
+            background-color: #fa3;
+            margin: 100px auto;
+            /* x轴的四个角全部为50%，60 60 40 40 为四个角的Y轴 */
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 心形 -->
+    <div id="heart"></div>
+
+    <!-- 蛋形 -->
+    <div id="egg"></div>
+</body>
+</html>

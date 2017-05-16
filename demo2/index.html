@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesudo classess</title>
+    <style>
+        /* 无任何交互时 */
+        a:link {
+            color: #666;
+        }
+        /* 访问过的 */
+        a:visited {
+            color: #f00;
+        }
+        /* 放上去 */
+        a:hover {
+            color: #000;
+        }
+        /* 点击不放时 */
+        a:active {
+            color: #0f0; 
+        }
+
+        input:enabled {
+            background-color: #0f0;
+        }
+        input:disabled {
+            background: #f00;
+        }
+
+        radio:checked {}
+    </style>
+</head>
+<body>
+    <a href="">Pesudo classes></a><br>
+    <input type="text"><br>
+    <input type="text" disabled><br>
+</body>
+</html>

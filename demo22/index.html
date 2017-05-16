@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画关键帧</title>
+    <style>
+        .rect {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            /* 使用动画，动画名，动画时常，反复执行 */
+            animation: mymovie 3s 3;
+            /* animation分解 */
+            /*animation-name: mymovie;*/
+            /*animation-duration: 2s;*/
+            /*animation-timing-function: ease;*/
+            /* 延时 */
+            /*animation-delay: 1s;*/
+            /* 动画执行几次,infinite 无限循环 */
+            /*animation-iteration-count: 3;*/
+            /* 动画执行方向 normal alternate*/
+            /*animation-direction: alternate;*/
+        }
+        
+        /* 定义动画关键帧 */
+        /*@keyframes mymovie {
+            from { top: 0; left: 0; }
+            to { top: 0; left: 80%; }
+        }*/
+        @keyframes mymovie {
+            0% { top: 0; left: 20%; background-color: red; }
+            25% { top: 0; left: 80%; background-color: blue; }
+            50% { top: 80%; left: 80%; background-color: green; }
+            75% { top: 80%; left: 20%; background-color: black; }
+            100% { top: 0; left: 20%; background-color: red; }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+        动画关键帧 @keyframes
+     -->
+
+     <div class="rect"></div>
+</body>
+</html>

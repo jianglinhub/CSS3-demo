@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .demo {
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 50px auto;
+            padding: 10px;
+        }
+        .demo::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+            /* float可以使字下沉 */
+            float: left;
+        }
+        /* 设置第一行的样式 */
+        .demo::first-line {
+            color: #f0f;
+        }
+        .demo01 {
+            width: 300px;
+            border: 1px solid #ccc;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        .demo01::before {
+            content: url(./favicon.ico);
+            display: block;
+        }
+        .demo01::after {
+            content: url(./favicon.ico);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        Lorem ipsum指一篇常用于排版设计领域的拉丁文文章，
+        主要目的是测试文章或文字在不同字型、版型下看起来的效果。
+        通过Emmet，你只需输入lorem 或 lipsum即可生成这些文字。
+    </div>
+
+    <div class="demo01">
+        <div>玩转CSS3新特性</div>
+    </div>
+</body>
+</html>
